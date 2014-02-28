@@ -1,0 +1,24 @@
+Name       : kde-extra-cmake-modules
+Version    : 0.0.9.20131217.83f4d25
+Release    : 1
+Group      : Applications/System
+License    : BSD
+Summary    : KDE extra cmake modules
+Description: Extra modules for building kde solid
+Sources    : 
+    - kde-extra-cmake-modules-%{version}.tar.bz2
+Configure  : cmake 
+ConfigOptions:
+    - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+
+PkgBR:
+    - cmake
+    - python
+
+Files:
+    - "%{_datadir}/ECM/doc/*"
+    - "%{_datadir}/ECM/modules/*"
+    - "%{_datadir}/ECM/kde-modules/*"
+    - "%{_datadir}/ECM/find-modules/*"
+    - "%{_datadir}/ECM/cmake/*"
+    - "%{_prefix}/man/man7/extra-cmake-modules.7.gz"
