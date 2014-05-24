@@ -17,8 +17,7 @@ PkgBR:
     - cmake
     - python
     - kf5-rpm-macros
-PkgConfigBR:
-    - Qt5LinguistTools
+    - qt5-qttools-linguist
 Requires:
     - cmake
     - kf5-filesystem
