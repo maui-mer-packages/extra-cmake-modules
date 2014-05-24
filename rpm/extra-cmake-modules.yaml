@@ -9,6 +9,7 @@ Description: Extra modules for KDE Frameworks
 Sources    : 
     - "%{name}-%{version}.tar.xz"
 SetupOptions: -q -n %{name}-%{version}/upstream
+BuildArch  : noarch
 
 Configure  : none
 Builder    : none

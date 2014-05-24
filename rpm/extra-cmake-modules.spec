@@ -13,6 +13,7 @@ Version:    0.0.13
 Release:    1
 Group:      Applications/System
 License:    BSD
+BuildArch:  noarch
 URL:        http://www.kde.org
 Source0:    %{name}-%{version}.tar.xz
 Source100:  extra-cmake-modules.yaml
