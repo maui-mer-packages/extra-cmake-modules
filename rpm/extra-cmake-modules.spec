@@ -16,9 +16,9 @@ License:    BSD
 URL:        http://www.kde.org
 Source0:    %{name}-%{version}.tar.xz
 Source100:  extra-cmake-modules.yaml
-Requires:   cmake
+Requires:   cmake >= 2.8.12
 Requires:   kf5-filesystem
-BuildRequires:  cmake
+BuildRequires:  cmake >= 2.8.12
 BuildRequires:  python
 BuildRequires:  kf5-rpm-macros
 BuildRequires:  qt5-qttools-linguist

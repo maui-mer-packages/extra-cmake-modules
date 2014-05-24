@@ -14,12 +14,12 @@ Configure  : none
 Builder    : none
 
 PkgBR:
-    - cmake
+    - cmake >= 2.8.12
     - python
     - kf5-rpm-macros
     - qt5-qttools-linguist
 Requires:
-    - cmake
+    - cmake >= 2.8.12
     - kf5-filesystem
 
 Files:
