@@ -13,6 +13,7 @@ Version:    0.0.11.20140323.f686ff7
 Release:    1
 Group:      Applications/System
 License:    BSD
+URL:        http://www.kde.org
 Source0:    extra-cmake-modules-%{version}.tar.bz2
 Source100:  extra-cmake-modules.yaml
 Requires:   cmake

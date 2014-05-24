@@ -2,6 +2,7 @@ Name       : extra-cmake-modules
 Version    : 0.0.11.20140323.f686ff7
 Release    : 1
 Group      : Applications/System
+URL        : http://www.kde.org
 License    : BSD
 Summary    : KDE extra cmake modules
 Description: Extra modules for KDE Frameworks
