@@ -53,10 +53,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%{_datadir}/ECM/modules/ECMVersionHeader.h.in
-%{_datadir}/ECM/modules/*.cmake
-%{_datadir}/ECM/kde-modules/*.cmake
-%{_datadir}/ECM/find-modules/*.cmake
-%{_datadir}/ECM/cmake/*.cmake
+%doc README.rst COPYING-CMAKE-SCRIPTS
+%{_datadir}/ECM
 # >> files
 # << files
