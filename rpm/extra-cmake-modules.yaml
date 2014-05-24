@@ -7,7 +7,9 @@ License    : BSD
 Summary    : KDE extra cmake modules
 Description: Extra modules for KDE Frameworks
 Sources    : 
-    - extra-cmake-modules-%{version}.tar.bz2
+    - "%{name}-%{version}.tar.xz"
+SetupOptions: -q -n %{name}-%{version}/upstream
+
 Configure  : cmake 
 ConfigOptions:
     - -DCMAKE_BUILD_TYPE=RelWithDebInfo

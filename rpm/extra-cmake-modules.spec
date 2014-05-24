@@ -14,7 +14,7 @@ Release:    1
 Group:      Applications/System
 License:    BSD
 URL:        http://www.kde.org
-Source0:    extra-cmake-modules-%{version}.tar.bz2
+Source0:    %{name}-%{version}.tar.xz
 Source100:  extra-cmake-modules.yaml
 Requires:   cmake
 BuildRequires:  cmake
@@ -24,14 +24,13 @@ BuildRequires:  python
 Extra modules for KDE Frameworks
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}-%{version}/upstream
 
 # >> setup
 # << setup
 
 %build
 # >> build pre
-cd upstream
 # << build pre
 
 %cmake .  \
@@ -45,7 +44,6 @@ make %{?_smp_mflags}
 %install
 rm -rf %{buildroot}
 # >> install pre
-cd upstream
 # << install pre
 %make_install
 
