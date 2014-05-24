@@ -18,6 +18,7 @@ Source0:    %{name}-%{version}.tar.xz
 Source100:  extra-cmake-modules.yaml
 Requires:   cmake
 Requires:   kf5-filesystem
+BuildRequires:  pkgconfig(Qt5LinguistTools)
 BuildRequires:  cmake
 BuildRequires:  python
 BuildRequires:  kf5-rpm-macros
