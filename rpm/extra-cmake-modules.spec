@@ -15,6 +15,7 @@ Group:      Applications/System
 License:    BSD
 Source0:    extra-cmake-modules-%{version}.tar.bz2
 Source100:  extra-cmake-modules.yaml
+Requires:   cmake
 BuildRequires:  cmake
 BuildRequires:  python
 

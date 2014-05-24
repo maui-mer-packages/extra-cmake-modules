@@ -14,6 +14,8 @@ ConfigOptions:
 PkgBR:
     - cmake
     - python
+Requires:
+    - cmake
 
 Files:
     - "%{_datadir}/ECM/modules/ECMVersionHeader.h.in"
