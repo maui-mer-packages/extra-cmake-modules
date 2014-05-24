@@ -10,15 +10,16 @@ Sources    :
     - "%{name}-%{version}.tar.xz"
 SetupOptions: -q -n %{name}-%{version}/upstream
 
-Configure  : cmake 
-ConfigOptions:
-    - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+Configure  : none
+Builder    : none
 
 PkgBR:
     - cmake
     - python
+    - kf5-rpm-macros
 Requires:
     - cmake
+    - kf5-filesystem
 
 Files:
     - "%{_datadir}/ECM/modules/ECMVersionHeader.h.in"

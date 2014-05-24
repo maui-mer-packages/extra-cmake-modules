@@ -17,8 +17,10 @@ URL:        http://www.kde.org
 Source0:    %{name}-%{version}.tar.xz
 Source100:  extra-cmake-modules.yaml
 Requires:   cmake
+Requires:   kf5-filesystem
 BuildRequires:  cmake
 BuildRequires:  python
+BuildRequires:  kf5-rpm-macros
 
 %description
 Extra modules for KDE Frameworks
@@ -31,12 +33,10 @@ Extra modules for KDE Frameworks
 
 %build
 # >> build pre
+%kf5_make
 # << build pre
 
-%cmake .  \
-    -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
-make %{?_smp_mflags}
 
 # >> build post
 # << build post
@@ -45,9 +45,9 @@ make %{?_smp_mflags}
 rm -rf %{buildroot}
 # >> install pre
 # << install pre
-%make_install
 
 # >> install post
+%kf5_make_install
 # << install post
 
 %files
