@@ -9,7 +9,7 @@ Name:       extra-cmake-modules
 # << macros
 
 Summary:    KDE extra cmake modules
-Version:    0.0.13
+Version:    0.0.14
 Release:    1
 Group:      Applications/System
 License:    BSD
