@@ -8,8 +8,14 @@ Name:       extra-cmake-modules
 # >> macros
 # << macros
 
+# >> bcond_with
+# << bcond_with
+
+# >> bcond_without
+# << bcond_without
+
 Summary:    KDE extra cmake modules
-Version:    1.1.0
+Version:    1.2.1
 Release:    1
 Group:      Applications/System
 License:    BSD
