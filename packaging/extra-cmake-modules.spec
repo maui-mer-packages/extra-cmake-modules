@@ -8,12 +8,6 @@ Name:       extra-cmake-modules
 # >> macros
 # << macros
 
-# >> bcond_with
-# << bcond_with
-
-# >> bcond_without
-# << bcond_without
-
 Summary:    KDE extra cmake modules
 Version:    1.2.1
 Release:    1
@@ -34,7 +28,7 @@ BuildRequires:  qt5-qttools-linguist
 Extra modules for KDE Frameworks
 
 %prep
-%setup -q -n %{name}-%{version}/upstream
+%setup -q -n %{name}-%{version}
 
 # >> setup
 # << setup
